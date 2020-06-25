@@ -1,0 +1,58 @@
+/* Customize accent */
+:root {
+	--accent: #25BF99;
+	--accent-button-hover: #25BF99;
+	--accent-hover: #25BF9914;
+	--accent-hover-down: #25BF9929;
+}
+
+/* Background changes */
+body {
+	background: #27282B !important;
+}
+.r-yfoy6g, .r-1uhd6vh, .r-aaos50 {
+	background: #1E1F21 !important;
+	border-color: #1E1F21 !important;
+}
+
+.r-1uaug3w {
+	background: #131314 !important;
+}
+
+.r-18bvks7, .r-1ila09b {
+	border-color: #35363B !important;
+}
+.r-hjejmn {
+	background-color: #35363B;
+}
+
+/* Replaces Pink colors with custom accents */
+/*
+.r-daml9f, [style="color: rgb(224, 36, 94);"] {
+	color: var(--accent) !important;
+}
+.r-1dgebii {
+	background-color: var(--accent);
+}
+.r-1ucxkr8, .r-7ljwo6 {
+	background-color: var(--accent-button-hover);
+}
+.r-wcu338, .r-1nvv5a4, .r-9rssp {
+	background-color: var(--accent-hover);
+}
+.r-1iofnty, .r-3bm6e9 {
+	border-color: var(--accent);
+}
+.r-q17tgg {
+	background-color: var(--accent-hover-down);
+}
+.r-l7fug5 {
+	border-right-color: var(--accent);
+}
+[role="progressbar"] circle {
+	stroke: var(--accent) !important;
+}
+[role="progressbar"] circle[stroke="#38444D"] {
+	stroke: #38444D !important;
+}
+*/
