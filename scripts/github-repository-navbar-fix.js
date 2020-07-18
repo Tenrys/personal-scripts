@@ -9,9 +9,10 @@
 // ==/UserScript==
 
 function fixNavbar() {
-	const fixed = document.querySelector(".repohead .container-xl");
+	if (!document.querySelector(".js-repo-nav")) return;
+	const fixed = document.querySelector("main div .container-xl");
 	if (fixed) return;
-	const repohead = document.querySelector(".repohead");
+	const repohead = document.querySelector("main div");
 	const containerXl = document.createElement("div");
 	containerXl.className = "container-xl";
 	while (repohead.childNodes.length > 0) {
@@ -19,13 +20,12 @@ function fixNavbar() {
 	}
 	repohead.appendChild(containerXl);
 
-	const underlineNav = document.querySelector(".repohead .UnderlineNav");
+	const underlineNav = document.querySelector("main div .UnderlineNav");
 	underlineNav.style = "overflow: visible !important";
 	const underlineNavOverflow = document.querySelector(
-		".repohead .UnderlineNav [class*='underlinenav-overflow']"
+		"main div .UnderlineNav [class*='underlinenav-overflow']"
 	);
 	underlineNavOverflow.style =
 		"position: relative !important; padding-right: 0 !important;";
 }
-fixNavbar();
 setInterval(fixNavbar, 0);
