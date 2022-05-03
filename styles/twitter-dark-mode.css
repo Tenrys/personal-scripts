@@ -1,9 +1,10 @@
 /* Customize accent */
 :root {
-	--accent: #25BF99;
-	--accent-button-hover: #25BF99;
-	--accent-hover: #25BF9914;
-	--accent-hover-down: #25BF9929;
+	--accent: hsl(224, 66%, 70%);
+	--accent-button-hover: hsl(224, 66%, 65%);
+	--accent-button-hover-down: hsl(224, 66%, 40%);
+	--accent-hover: hsla(224, 66%, 65%, .075);
+	--accent-hover-down: hsla(224, 66%, 40%, .125);
 }
 
 /* Background changes */
@@ -15,7 +16,7 @@ body {
 	border-color: #1E1F21 !important;
 }
 
-.r-1uaug3w {
+.r-1uaug3w, .r-bjte33 {
 	background: #131314 !important;
 }
 
@@ -26,33 +27,37 @@ body {
 	background-color: #35363B;
 }
 
-/* Replaces Pink colors with custom accents */
-/*
-.r-daml9f, [style="color: rgb(224, 36, 94);"] {
+/* Replaces Pink / Light Blue colors with custom accents */
+.r-daml9f, .r-6743kw, [style="color: rgb(224, 36, 94);"] {
 	color: var(--accent) !important;
 }
-.r-1dgebii {
+.r-1dgebii, .r-ehp08b {
 	background-color: var(--accent);
 }
-.r-1ucxkr8, .r-7ljwo6 {
-	background-color: var(--accent-button-hover);
-}
-.r-wcu338, .r-1nvv5a4, .r-9rssp {
-	background-color: var(--accent-hover);
-}
-.r-1iofnty, .r-3bm6e9 {
+.r-1iofnty, .r-3bm6e9, .r-141ztgp {
 	border-color: var(--accent);
-}
-.r-q17tgg {
-	background-color: var(--accent-hover-down);
 }
 .r-l7fug5 {
 	border-right-color: var(--accent);
 }
+.r-wcu338, .r-1nvv5a4, .r-9rssp, .r-16hm58k, .r-1398f9q, .r-10nrmow {
+	background-color: var(--accent-hover);
+}
+.r-q17tgg, .r-169l5a1 {
+	background-color: var(--accent-hover-down);
+}
+.r-1ucxkr8, .r-7ljwo6, .r-15hagjf, .r-88ljsu {
+	background-color: var(--accent-button-hover);
+}
+.r-1l60bri {
+    background-color: var(--accent-button-hover-down);
+}
+
+/* Related to tweet char count */
 [role="progressbar"] circle {
 	stroke: var(--accent) !important;
 }
 [role="progressbar"] circle[stroke="#38444D"] {
 	stroke: #38444D !important;
 }
-*/
+
