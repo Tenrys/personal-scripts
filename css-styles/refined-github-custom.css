@@ -1,0 +1,13 @@
+/* This is just an alternative to the other userscript I posted, which I'm not sure still works */
+
+#repository-container-header {
+	box-shadow: inset 0 -1px 0 var(--color-border-muted);
+}
+#repository-container-header > * {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.UnderlineNav-actions {
+	position: relative !important;
+	padding-right: 0 !important;
+}
